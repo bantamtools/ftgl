@@ -19,3 +19,4 @@ stamp-h1
 *.o
 src/.deps
 src/.libs
+build/*
