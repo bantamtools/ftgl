@@ -105,9 +105,9 @@ static void RenderScene(void)
     float t2 = sin(n / 50 + 1);
     float t3 = sin(n / 30 + 2);
 
-    float ambient[4]  = { (t1 + 2.0) / 3,
-                          (t2 + 2.0) / 3,
-                          (t3 + 2.0) / 3, 0.3 };
+    float ambient[4]  = { static_cast<float>((t1 + 2.0) / 3),
+                          static_cast<float>((t2 + 2.0) / 3),
+                          static_cast<float>((t3 + 2.0) / 3), 0.3 };
     float diffuse[4]  = { 1.0, 0.9, 0.9, 1.0 };
     float specular[4] = { 1.0, 0.7, 0.7, 1.0 };
     float position[4] = { 100.0, 100.0, 0.0, 1.0 };
